@@ -1,5 +1,5 @@
-site_name: My WiFi Tech Blog
-site_description: A blog about WiFi tech
+site_name: WiFi & Tech
+site_description: A blog about WiFi and Tech
 site_url: https://sitename.example
 
 nav:
@@ -18,6 +18,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
+    - toc.integrate
   palette: # Fixed spelling
     # Dark Mode
     - scheme: slate
@@ -53,7 +54,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: true
+      permalink: false
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tilde
