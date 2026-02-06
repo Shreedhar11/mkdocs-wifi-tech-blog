@@ -1,0 +1,61 @@
+site_name: My WiFi Tech Blog
+site_description: A blog about WiFi tech
+site_url: https://sitename.example
+
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: Space Grotesk
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+  palette: # Fixed spelling
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+      primary: blue grey
+      accent: indigo
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+      primary: blue grey
+      accent: indigo
+
+extra_css:
+  - styles/extra.css
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: long
+      post_url_date_format: yyyy/MM
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
