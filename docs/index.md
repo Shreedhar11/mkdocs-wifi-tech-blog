@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - navigation
+---
+
 # My WiFi Tech Blog
 
 Welcome! This is a practical journal about WiFi engineering, field troubleshooting, and home lab experiments. I share what I test, what breaks, and what actually fixes it.

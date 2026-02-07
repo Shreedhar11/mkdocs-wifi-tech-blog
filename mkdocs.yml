@@ -18,7 +18,10 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
+    - navigation.instant
     - toc.integrate
+    - navigation.instant.prefetch
+    - navigation.instant.progress
   palette: # Fixed spelling
     # Dark Mode
     - scheme: slate
@@ -35,6 +38,9 @@ theme:
         name: Switch to dark mode
       primary: blue grey
       accent: indigo
+
+  icon:
+    repo: fontawesome/brands/git-alt
 
 extra_css:
   - styles/extra.css
@@ -60,3 +66,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
+
+repo_name: Shreedhar11/mkdocs-wifi-tech-blog
+repo_url: https://github.com/Shreedhar11/mkdocs-wifi-tech-blog
