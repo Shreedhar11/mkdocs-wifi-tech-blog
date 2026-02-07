@@ -19,6 +19,9 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.instant
+    - navigation.tracking
+    - search.highlight
+    - content.code.copy
     - toc.integrate
     - navigation.instant.prefetch
     - navigation.instant.progress
