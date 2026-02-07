@@ -19,26 +19,31 @@ This sample post shows common Markdown patterns used for technical blogs. Copy a
 
 ## Two Columns (Responsive)
 
-<div class="two-column">
-  <div>
-    **Left column**
+<div class="two-column" markdown="1">
+  <div markdown="1">
 
-    - Quick notes
-    - Short lists
-    - Definitions
+**Left column**
 
-    **Signal tip:** Aim for `-65 dBm` or better for good roaming.
+- Quick notes
+- Short lists
+- Definitions
+
+**Signal tip:** Aim for `-65 dBm` or better for good roaming.
+
   </div>
-  <div>
-    **Right column**
+  <div markdown="1">
 
-    - Results
-    - Mini tables
-    - Warnings
+**Right column**
 
-    **Client tip:** Test with a real client device, not just the AP dashboard.
+- Results
+- Mini tables
+- Warnings
+
+**Client tip:** Test with a real client device, not just the AP dashboard.
+
   </div>
 </div>
+
 
 ## Table
 

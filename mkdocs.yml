@@ -11,7 +11,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   font:
-    text: Space Grotesk
+    text: Roboto
     code: JetBrains Mono
   features:
     - navigation.tabs
