@@ -9,7 +9,7 @@ categories:
 
 **MIMO (Multiple-Input, Multiple-Output)** technology has been a cornerstone of Wi-Fi evolution since 2009. It evolved from boosting single-user throughput to efficiently serving dense, multi-user environments. By using multiple antennas at both the transmitter and receiver, MIMO improves signal reliability, spectral efficiency, and overall data throughput.
 
----
+<!-- more -->
 
 ## Wi-Fi 4 (802.11n – 2009): Introduction of SU-MIMO
 
