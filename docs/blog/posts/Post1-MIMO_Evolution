@@ -1,3 +1,10 @@
+---
+date:
+  created: 2026-02-07
+categories:
+  - WiFi
+---
+
 # Evolution of MIMO in Wi-Fi Standards
 
 **MIMO (Multiple-Input, Multiple-Output)** technology has been a cornerstone of Wi-Fi evolution since 2009. It evolved from boosting single-user throughput to efficiently serving dense, multi-user environments. By using multiple antennas at both the transmitter and receiver, MIMO improves signal reliability, spectral efficiency, and overall data throughput.
