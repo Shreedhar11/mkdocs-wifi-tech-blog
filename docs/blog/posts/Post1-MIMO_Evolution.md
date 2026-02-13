@@ -3,6 +3,7 @@ date:
   created: 2026-02-07
 categories:
   - WiFi
+draft: true
 ---
 
 # Evolution of MIMO in Wi-Fi Standards
