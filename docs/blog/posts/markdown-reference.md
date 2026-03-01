@@ -1,10 +1,10 @@
 ---
+draft: true
 date:
   created: 2026-02-06
 categories:
   - Writing
   - Reference
-draft: true
 ---
 
 # Markdown Reference Post (All Examples)

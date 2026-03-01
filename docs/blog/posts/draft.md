@@ -1,7 +1,7 @@
 ---
+draft: true
 date:
   created: 2024-01-01
-draft: true
 categories:
   - Announcements
 ---

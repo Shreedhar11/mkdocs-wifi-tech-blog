@@ -1,4 +1,5 @@
 ---
+draft: true
 date:
   created: 2026-02-07
 categories:
