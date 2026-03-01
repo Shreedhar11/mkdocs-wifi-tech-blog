@@ -162,3 +162,28 @@ If you want a different font, update the `theme.font` section in `mkdocs.yml` an
 - Add diagrams with Mermaid (great for network flows).
 - Use tabs for "Windows/Linux/macOS" command variants.
 - Add callout boxes for troubleshooting checklists.
+
+
+## Link a word to a heading
+
+To link a word to a heading in Markdown (which MkDocs uses), you use standard anchor link syntax: [Text to click](#the-header-id).
+
+MkDocs automatically generates an ID (a "slug") for every heading in your document. You just need to format that ID correctly in your link.
+
+The Rules for Header IDs
+To figure out the auto-generated ID, take the exact text of your heading and apply these three rules:
+
+Make everything lowercase.
+
+Replace all spaces with hyphens (-).
+
+Remove all special characters and punctuation (like ?, !, :, (, )).
+
+Example from Your Blog
+Let's say you want to link the word "OFDMA" back to its specific heading in Section II.
+
+Your Heading:
+### 1. OFDMA: The Secret Sauce
+
+The Auto-Generated ID:
+#1-ofdma-the-secret-sauce (Notice the colon is removed, and spaces are hyphens)
