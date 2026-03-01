@@ -23,7 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
+          pip install -r requirements.txt
+      - name: Verify MkDocs 1.x
+        run: |
+          mkdocs --version
+          mkdocs --version | grep -Eq "version 1\\."
 
       - name: Deploy to GitHub Pages
         run: |
