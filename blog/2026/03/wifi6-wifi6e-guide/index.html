@@ -1,0 +1,1074 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A blog about WiFi and Tech">
+      
+      
+      
+        <link rel="canonical" href="https://sitename.example/blog/2026/03/wifi6-wifi6e-guide/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Why WiFi 6 Isn't About Speed (And Why WiFi 6E Changes Everything) - WiFi & Tech</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-wifi-6-isnt-about-speed-and-why-wifi-6e-changes-everything" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="WiFi &amp; Tech" class="md-header__button md-logo" aria-label="WiFi & Tech" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WiFi & Tech
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Why WiFi 6 Isn't About Speed (And Why WiFi 6E Changes Everything)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Shreedhar11/mkdocs-wifi-tech-blog" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Shreedhar11/mkdocs-wifi-tech-blog
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="WiFi &amp; Tech" class="md-nav__button md-logo" aria-label="WiFi & Tech" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    WiFi & Tech
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Shreedhar11/mkdocs-wifi-tech-blog" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Shreedhar11/mkdocs-wifi-tech-blog
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archive/2026/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2026
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../category/wifi6-80211ax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WiFi6 (802.11ax)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-03-01 00:00:00+00:00" class="md-ellipsis">March 1, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../category/wifi6-80211ax/">WiFi6 (802.11ax)</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              10 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-why-wifi-6-the-efficiency-era" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Why WiFi 6: The "Efficiency" Era
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Why WiFi 6: The "Efficiency" Era">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-shift-in-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Shift in Philosophy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-congestion-problem-a-brief-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Congestion Problem (A Brief History)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generational-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generational Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-what-is-wifi-6-the-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. What is WiFi 6: The Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. What is WiFi 6: The Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ofdma-the-secret-sauce" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. OFDMA: The Secret Sauce
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-1024-qam-the-need-for-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 1024-QAM: The Need for Speed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-bss-coloring-the-noise-canceller" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. BSS Coloring: The Noise Canceller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-target-wake-time-twt-the-battery-saver" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Target Wake Time (TWT): The Battery Saver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-uldl-mu-mimo-the-heavy-lifter" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. UL/DL MU-MIMO: The Heavy Lifter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-centralized-ap-scheduling-trigger-frames-the-traffic-cop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Centralized AP Scheduling (Trigger Frames): The Traffic Cop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-what-is-wifi-6e-the-extension-to-6ghz" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. What is WiFi 6E: The "E"xtension to 6GHz
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="III. What is WiFi 6E: The "E"xtension to 6GHz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-spectrum-bonanza-no-more-dfs-headaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Spectrum Bonanza (No More DFS Headaches)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-greenfield-rule-no-legacy-devices-allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The Greenfield Rule (No Legacy Devices Allowed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-discovery-challenge-psc-and-rnr" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. The Discovery Challenge (PSC and RNR)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mandatory-wpa3-and-enhanced-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Mandatory WPA3 and Enhanced Open
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iv-how-wifi-66e-works-putting-it-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. How WiFi 6/6E Works: Putting it Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. How WiFi 6/6E Works: Putting it Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-workflow-orchestrating-a-single-txop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Workflow: Orchestrating a Single TXOP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed-vs-capacity-the-real-world-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed vs. Capacity (The Real-World Impact)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-you-might-have-missed-the-6-ghz-achilles-heel" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You Might Have Missed: The 6 GHz Achilles' Heel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+
+  
+  
+
+
+<h1 id="why-wifi-6-isnt-about-speed-and-why-wifi-6e-changes-everything">Why WiFi 6 Isn't About Speed (And Why WiFi 6E Changes Everything)</h1>
+<hr />
+<h2 id="i-why-wifi-6-the-efficiency-era">I. Why WiFi 6: The "Efficiency" Era</h2>
+<p>Let’s be brutally honest: for the last two decades, the WiFi industry has been obsessed with a single, flashy metric—peak <strong>theoretical speed</strong>. We kept building faster cars and wider highways, but we completely ignored the traffic lights.</p>
+<p>When WiFi 5 (802.11ac) hit the scene, it promised screaming-fast theoretical data rates of up to 6.93 Gbps. But what good is a Ferrari that can travel at 300 km per hour if it is stuck in traffic gridlock? In the real world—especially in dense enterprise environments, auditoriums, and crowded offices—that peak speed plummeted the moment hundreds of mobile and IoT devices started fighting for airtime.</p>
+<!-- more -->
+
+<h3 id="the-shift-in-philosophy">The Shift in Philosophy</h3>
+<p>WiFi 6 (802.11ax) is not just another speed bump; it is a massive wireless paradigm shift. It is the first standard built from the ground up for <strong>High Efficiency (HE)</strong>. Instead of asking, "How fast can we push data to a single client in a vacuum?", WiFi 6 asks, "How efficiently can we orchestrate airtime for 50 clients transmitting at the exact same time?"</p>
+<h3 id="the-congestion-problem-a-brief-history">The Congestion Problem (A Brief History)</h3>
+<p>To appreciate the genius of WiFi 6, look at the timeline of our struggles. Back in 1999, 802.11b gave us speeds up to 11 Mbps. It was slow, but there were no WiFi mobile devices and very few laptops, so it was fast enough. Then came the smartphone explosion in 2007, followed by the IoT boom. We countered with 802.11n (bringing MIMO) and 802.11ac (bringing massive channels, but only in the 5 GHz band).</p>
+<p>But the underlying channel access method—CSMA/CA (listen-before-talk)—remained exactly the same. Because RF is a half-duplex medium, devices spent more time waiting in line for clear airtime than actually transmitting data. The 2.4 GHz band became a toxic wasteland of interference, and even the 5 GHz band rapidly turned into a congested parking lot. WiFi 6 was engineered explicitly to fix this contention overhead and bring deterministic, switch-like behavior to the RF medium.</p>
+<h3 id="generational-comparison">Generational Comparison</h3>
+<p>To build your knowledge base and see exactly where WiFi 6 and its 6 GHz extension (WiFi 6E) fit into the bigger picture, here is the ultimate cheat sheet on how the core technical parameters evolved:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>WiFi 4 (802.11n)</th>
+<th>WiFi 5 (802.11ac)</th>
+<th>WiFi 6 (802.11ax)</th>
+<th>WiFi 6E (802.11ax)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Target Metric</strong></td>
+<td>High Throughput (HT)</td>
+<td>Very High Throughput (VHT)</td>
+<td><strong>High Efficiency (HE)</strong></td>
+<td><strong>High Efficiency (HE)</strong></td>
+</tr>
+<tr>
+<td><strong>Bands</strong></td>
+<td>2.4 &amp; 5 GHz</td>
+<td>5 GHz only</td>
+<td>2.4 &amp; 5 GHz</td>
+<td>2.4, 5, &amp; <strong>6 GHz</strong></td>
+</tr>
+<tr>
+<td><strong>Max Modulation</strong></td>
+<td>64-QAM</td>
+<td>256-QAM</td>
+<td>1024-QAM</td>
+<td>1024-QAM</td>
+</tr>
+<tr>
+<td><strong>Channel Access</strong></td>
+<td>OFDM</td>
+<td>OFDM</td>
+<td><strong>OFDMA</strong></td>
+<td><strong>OFDMA</strong></td>
+</tr>
+<tr>
+<td><strong>MIMO</strong></td>
+<td>SU-MIMO</td>
+<td>DL MU-MIMO</td>
+<td><strong>UL/DL MU-MIMO</strong></td>
+<td><strong>UL/DL MU-MIMO</strong></td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>WPA2</td>
+<td>WPA2</td>
+<td>WPA3 (Optional)</td>
+<td><strong>WPA3 (Mandatory)</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ii-what-is-wifi-6-the-building-blocks">II. What is WiFi 6: The Building Blocks</h2>
+<p>If WiFi 5 was all about building a bigger engine, WiFi 6 is about completely redesigning the transmission. The IEEE officially defines the 802.11ax standard as <strong>High Efficiency (HE)</strong>. Instead of blindly pushing higher peak data rates into a congested void, WiFi 6 introduces a fundamentally new set of physical (PHY) and MAC layer mechanisms to strictly manage airtime.</p>
+<p>Here are the core pillars that give WiFi 6 its High Efficiency identity:</p>
+<h3 id="1-ofdma-the-secret-sauce">1. OFDMA: The Secret Sauce</h3>
+<p>Orthogonal Frequency-Division Multiple Access (OFDMA) is without a doubt the most critical game-changer in the WiFi 6 standard. In older WiFi generations, a single client took up the entire channel to send a frame, no matter how small the payload was. It was like driving a massive 18-wheeler down a single-lane highway just to deliver a single envelope.</p>
+<p>OFDMA fixes this by sub-dividing a standard WiFi channel into much smaller frequency allocations called <strong>Resource Units (RUs)</strong>. In <strong>downlink OFDMA</strong>, an access point (AP) can synchronize communication and talk to multiple clients simultaneously by assigning them their own specific RUs. It essentially turns a single-lane road into a multi-lane superhighway. This parallel transmission capability is the #1 reason WiFi 6 absolutely crushes it in dense environments. In <strong>uplink OFDMA</strong>, clients transmit simultaneously to the AP, but *only after being scheduled via <a href="#6-centralized-ap-scheduling-trigger-frames-the-traffic-cop">Trigger Frame</a>.</p>
+<h3 id="2-1024-qam-the-need-for-speed">2. 1024-QAM: The Need for Speed</h3>
+<p>While efficiency is the hero, speed is still a fantastic sidekick. WiFi 6 bumps the maximum modulation scheme up to 1024-QAM. By packing 10 bits of data into every single symbol transmitted, it delivers a potential 25% increase in data throughput compared to WiFi 5's 256-QAM.</p>
+<blockquote>
+<p><strong>Field Note:</strong> Let's keep it real. To actually negotiate 1024-QAM and hit those screaming-fast data rates, you need a pristine RF environment with a Signal-to-Noise Ratio (SNR) of 35 decibels (dB) or higher. In the real-world enterprise, you are only hitting this if your client is practically sitting in the same room with the AP with clear line-of-sight.
+</p>
+</blockquote>
+<h3 id="3-bss-coloring-the-noise-canceller">3. BSS Coloring: The Noise Canceller</h3>
+<p>Historically, if two APs on the same channel heard each other, they would politely wait their turn. This caused devastating Co-Channel Interference, officially known as an Overlapping Basic Service Set (OBSS).</p>
+<p>WiFi 6 fights this medium contention overhead with <strong>BSS Coloring</strong>. It inserts a 6-bit numerical identifier (the "color") directly into the PHY header of the WiFi frame. When a radio hears traffic on its channel, it checks the color. If the color matches, it’s a device in its own cell, so it defers. If the color is different, it knows it is just background noise from a neighboring AP. The radio may treat it as tolerable interference and continue transmitting, improving spatial reuse.</p>
+<h3 id="4-target-wake-time-twt-the-battery-saver">4. Target Wake Time (TWT): The Battery Saver</h3>
+<p>Before WiFi 6, devices had to wake up constantly just to check if the network had any data buffered for them, burning through battery life. <strong>Target Wake Time (TWT)</strong> is a brilliant new negotiated agreement between the AP and the client.</p>
+<p>Instead of randomized waking, TWT schedules explicit, targeted wake-up times. The device can sleep deeply, wake up at the exact negotiated microsecond to transmit or receive, and immediately go back to sleep. This is an absolute lifesaver for the battery life of smartphones and an absolute necessity for IoT sensors.</p>
+<h3 id="5-uldl-mu-mimo-the-heavy-lifter">5. UL/DL MU-MIMO: The Heavy Lifter</h3>
+<p>While OFDMA is the master of slicing up channels for small packets, Multi-User MIMO (MU-MIMO) handles the heavy lifting by utilizing different spatial streams. WiFi 6 allows an AP to transmit unique data streams to multiple users at the exact same time. And unlike WiFi 5, which only supported Downlink (DL) MU-MIMO, WiFi 6 scales this up to support Uplink (UL) MU-MIMO as well.</p>
+<h3 id="6-centralized-ap-scheduling-trigger-frames-the-traffic-cop">6. Centralized AP Scheduling (Trigger Frames): The Traffic Cop</h3>
+<p>For the last 20 years, WiFi has been a decentralized free-for-all. Clients used CSMA/CA to randomly fight each other for airtime. WiFi 6 changes the game by putting the Access Point firmly in control of the medium.</p>
+<p>To make multi-user technologies like Uplink OFDMA and Uplink MU-MIMO work, the AP must act as the ultimate traffic cop. It does this using a brand-new MAC control frame called a <strong>Trigger Frame</strong>.</p>
+<p>Instead of clients randomly yelling over each other, the AP sends a Trigger Frame that tells specific clients exactly <em>when</em> to transmit, exactly <em>which</em> Resource Unit (RU) to use, and even what transmit power to apply so their signals arrive at the AP at the exact same time. This centralized scheduling is what finally brings deterministic, switch-like behavior to wireless networking.</p>
+<h2 id="iii-what-is-wifi-6e-the-extension-to-6ghz">III. What is WiFi 6E: The "E"xtension to 6GHz</h2>
+<p>For over a decade, the WiFi industry has been forced to cram more and more devices into the exact same 2.4 GHz and 5 GHz frequency bands. It did not matter how efficient the 802.11ax protocol was; we were still fundamentally running out of usable RF spectrum.</p>
+<p>In late 2020, the WiFi Alliance announced <strong>WiFi 6E</strong>. The "E" stands for Extension. WiFi 6E is the exact same High Efficiency (802.11ax) standard we just discussed, but it has been extended into a brand-new, massive chunk of frequency: the <strong>6 GHz band</strong>.</p>
+<p>Here is why 6E is arguably the biggest WiFi milestone in the last 20 years.</p>
+<h3 id="1-the-spectrum-bonanza-no-more-dfs-headaches">1. The Spectrum Bonanza (No More DFS Headaches)</h3>
+<p>In the United States, the FCC opened up an astonishing <strong>1,200 MHz</strong> of new spectrum for unlicensed WiFi use. To put that in perspective, 6 GHz more than doubles the usable channels of the 2.4 GHz and 5 GHz bands combined. Other regions are following suit, with the European Union opening up a still-massive 500 MHz of spectrum.</p>
+<p>Why does this matter for enterprise design? Because we can finally use wide channels without destroying our networks.</p>
+<ul>
+<li><strong>The 5 GHz Reality:</strong> We have always had 80 MHz and 160 MHz channels in 5 GHz, but deploying them in an enterprise causes devastating co-channel interference. Plus, dodging radar with Dynamic Frequency Selection (DFS) makes channel planning a nightmare.</li>
+<li><strong>The 6 GHz Reality:</strong> The U.S. allocation gives us <strong>fourteen 80 MHz channels</strong> and <strong>seven 160 MHz channels</strong>. Furthermore, there are absolutely no DFS radar avoidance requirements in the 6 GHz band. You can finally deploy high-capacity 80 MHz channel reuse plans without the overlapping interference.</li>
+</ul>
+<h3 id="2-the-greenfield-rule-no-legacy-devices-allowed">2. The Greenfield Rule (No Legacy Devices Allowed)</h3>
+<p>The 2.4 GHz and 5 GHz bands are weighed down by "legacy baggage." Whenever a modern AP needs to talk, it has to use backward-compatible protection mechanisms (like RTS/CTS) to ensure older 802.11b/g/n/ac devices understand what is happening. This overhead burns an incredible amount of airtime.</p>
+<p>WiFi 6E fixes this by enforcing a strict <strong>Greenfield</strong> rule: <strong>No legacy devices are allowed in 6 GHz</strong>. Because 802.11a/b/g/n/ac radios literally cannot physically tune to the 6 GHz band, they cannot transmit there. The 6 GHz band is a pure 802.11ax environment. Think of it as a dedicated HOV express lane where slow-moving traffic is banned.</p>
+<h3 id="3-the-discovery-challenge-psc-and-rnr">3. The Discovery Challenge (PSC and RNR)</h3>
+<blockquote>
+<p>A massive band creates a massive new engineering problem: Discovery.</p>
+</blockquote>
+<p>In 2.4 GHz and 5 GHz, clients use "active scanning" by sending Probe Requests on every channel. If a client tried to actively scan all 59 of the new 20 MHz channels in 6 GHz, it would take over 6 seconds—an absolute eternity that would kill roaming.</p>
+<p>To solve this, WiFi 6E relies heavily on new discovery mechanisms:</p>
+<ul>
+<li><strong>Out-of-Band Discovery (RNR):</strong> This is the primary method. When a client scans the 2.4 GHz or 5 GHz band, the AP responds with a <strong>Reduced Neighbor Report (RNR)</strong>. This report tells the client, <em>"Hey, I also have a 6 GHz radio on channel 53, go connect there!"</em> The client discovers the 6 GHz network without ever having to scan the 6 GHz band.</li>
+<li><strong>In-Band Discovery (PSC):</strong> If a client <em>must</em> scan the 6 GHz band, it does not scan every channel. It only scans the <strong>Preferred Scanning Channels (PSC)</strong>, which are spaced every fourth 20 MHz channel.</li>
+</ul>
+<h3 id="4-mandatory-wpa3-and-enhanced-open">4. Mandatory WPA3 and Enhanced Open</h3>
+<p>The WiFi Alliance drew a hard line in the sand for 6 GHz security: backward compatibility with legacy security protocols is gone. Protected Management Frames (PMF / 802.11w) are strictly mandatory across the board to prevent deauthentication attacks.</p>
+<p>Here is how the security landscape changes in 6 GHz:</p>
+<ul>
+<li><strong>WPA3-Personal (The End of PSK):</strong> Vulnerable Pre-Shared Keys (PSK) are dead. WPA3-Personal replaces them with <strong>Simultaneous Authentication of Equals (SAE)</strong>. SAE uses a cryptographic handshake that is highly resistant to offline dictionary attacks, even if users choose weak passwords.</li>
+<li><strong>WPA3-Enterprise (The 802.1X Standard):</strong> For corporate networks using RADIUS/802.1X authentication, WPA3-Enterprise enforces stronger, more modern cryptographic cipher suites and completely deprecates legacy, insecure protocols. It also introduces an optional <strong>192-bit cryptographic suite</strong> (Suite-B) for environments requiring maximum, government-grade security.</li>
+<li><strong>Enhanced Open (The Death of Unencrypted WiFi):</strong> You can no longer have a completely unencrypted "Open" guest network in the 6 GHz band. Guest networks must use <strong>Enhanced Open</strong>, which utilizes <strong>Opportunistic Wireless Encryption (OWE)</strong>. OWE provides individualized, over-the-air data encryption for every guest client without requiring them to enter a password.</li>
+</ul>
+<hr />
+<h2 id="iv-how-wifi-66e-works-putting-it-together">IV. How WiFi 6/6E Works: Putting it Together</h2>
+<p>We have covered the "Why" and the "What." Now, let's look at the orchestration. How do all these High Efficiency mechanisms actually operate together to deliver on the promises of WiFi 6?</p>
+<h3 id="the-workflow-orchestrating-a-single-txop">The Workflow: Orchestrating a Single TXOP</h3>
+<p>In older WiFi generations, when a client won a Transmission Opportunity (TXOP), it transmitted a single frame and took up the entire channel. In WiFi 6, the Access Point takes control.</p>
+<p>When a WiFi 6 AP wins a TXOP, it becomes the conductor of an orchestra. Using a <strong>Trigger Frame</strong>, the AP dictates exactly how the RF medium will be used for the duration of that TXOP.</p>
+<ol>
+<li><strong>The Setup:</strong> The AP sends a Buffer Status Report Poll (BSRP) to ask associated WiFi 6 clients what data they have queued in their buffers.</li>
+<li><strong>The Coordination:</strong> The AP calculates the most efficient way to slice the channel into Resource Units (RUs) using OFDMA and/or group clients for MU-MIMO.</li>
+<li><strong>The Execution:</strong> The AP sends a Basic Trigger Frame telling specific clients exactly when to transmit, which RUs to use, and even how to adjust their transmit power. The clients then transmit their data simultaneously in a perfectly synchronized uplink transmission.</li>
+</ol>
+<p>This reduces random contention inside a transmission opportunity by allowing the AP to schedule clients.</p>
+<h3 id="speed-vs-capacity-the-real-world-impact">Speed vs. Capacity (The Real-World Impact)</h3>
+<p>Marketing materials love to slap "9.6 Gbps" on the front of WiFi 6 boxes. As enterprise engineers, we know better. That peak theoretical speed assumes a 160 MHz channel, 1024-QAM, an 8x8 radio, and a pristine RF environment.</p>
+<p>The real "How" of WiFi 6 is not about pushing 9 Gbps to a single laptop. It is about <strong>aggregate cell throughput</strong> and <strong>deterministic latency</strong>. By servicing multiple clients simultaneously with small packets (like voice or IoT traffic) via OFDMA, the AP dramatically reduces jitter and latency across the entire BSS.</p>
+<h3 id="what-you-might-have-missed-the-6-ghz-achilles-heel">What You Might Have Missed: The 6 GHz Achilles' Heel</h3>
+<p>While the massive 1,200 MHz of spectrum in WiFi 6E is incredible, physics still applies. The 6 GHz frequency band suffers from higher <strong>Free Space Path Loss (FSPL)</strong> than 5 GHz.</p>
+<blockquote>
+<p><strong>Field Note:</strong> The 6 dB rule dictates that every time you double the distance, you experience roughly 6 dB more path loss. Because 6 GHz signals start with higher attenuation in the very first meter, they simply do not travel as far or penetrate walls as well as 5 GHz.
+</p>
+</blockquote>
+<p>Furthermore, to protect incumbent outdoor links, regulatory bodies (like the FCC) enforce strict power limits. In the U.S., most 6 GHz enterprise deployments will operate under <strong>Low-Power Indoor (LPI)</strong> rules. These regulations enforce a maximum Equivalent Isotropically Radiated Power (EIRP) of 30 dBm for the AP, and force clients to operate at least 6 dB lower.</p>
+<p>The takeaway? WiFi 6E is a <strong>capacity standard, not a coverage standard</strong>. You cannot just swap out an older AP for a 6E AP on a 1-to-1 basis and expect the exact same coverage footprint.</p>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<blockquote>
+<p><em>"WiFi 6 fixed the efficiency of the engine by turning a single-lane road into a multi-lane highway. WiFi 6E gave us a brand-new, massive highway system (the 6 GHz spectrum) where slow, legacy traffic is completely banned. Together, they eliminate the wireless traffic jam."</em>
+</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.integrate", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

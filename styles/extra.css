@@ -1,0 +1,243 @@
+/* ======================================================
+   Brand tokens
+====================================================== */
+:root {
+  --brand-ink: #111827;
+  --brand-ink-muted: #4b5563;
+  --brand-accent: #2563eb;
+  --brand-accent-strong: #1d4ed8;
+  --brand-paper: #f8fafc;
+  --brand-surface: #ffffff;
+  --brand-surface-muted: #f1f5f9;
+  --brand-border: #e2e8f0;
+  --brand-header-bg: #f8fafc;
+  --brand-header-border: #e2e8f0;
+}
+
+/* ======================================================
+   Color schemes
+====================================================== */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--brand-paper);
+  --md-default-fg-color: var(--brand-ink);
+  --md-default-fg-color--light: var(--brand-ink-muted);
+  --md-accent-fg-color: var(--brand-accent);
+  --md-primary-fg-color: var(--brand-header-bg);
+  --md-primary-bg-color: var(--brand-ink);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0f14;
+  --md-default-fg-color: #e5e7eb;
+  --md-default-fg-color--light: #9ca3af;
+  --md-accent-fg-color: #5b8def;
+
+  --brand-ink: #e5e7eb;
+  --brand-ink-muted: #9ca3af;
+  --brand-paper: #0b0f14;
+  --brand-surface: #111827;
+  --brand-surface-muted: #0f172a;
+  --brand-border: #1f2937;
+  --brand-header-bg: #0f172a;
+  --brand-header-border: #1f2937;
+}
+
+/* ======================================================
+   Global typography
+====================================================== */
+body {
+  background: var(--brand-paper);
+  line-height: 1.4;
+  /* tighter but readable */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.md-typeset {
+  line-height: 1.4;
+}
+
+/* Paragraph spacing */
+.md-typeset p {
+  margin: 0.4rem 0 0.6rem;
+}
+
+/* Lists */
+.md-typeset ul,
+.md-typeset ol {
+  margin: 0.4rem 0 0.6rem;
+}
+
+.md-typeset li {
+  margin: 0.15rem 0;
+}
+
+/* ======================================================
+   Headings (key fix)
+====================================================== */
+.md-typeset h1 {
+  margin: 1.6rem 0 0.6rem;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  margin: 1.4rem 0 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.md-typeset h3 {
+  margin: 1.2rem 0 0.4rem;
+}
+
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  margin: 1rem 0 0.4rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ======================================================
+   Header & tabs
+====================================================== */
+.md-header,
+.md-tabs {
+  background: var(--brand-header-bg);
+  border-bottom: 1px solid var(--brand-header-border);
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.md-header__inner {
+  align-items: center;
+}
+
+.md-header__button {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.md-header__button[hidden] {
+  display: none !important;
+}
+
+.md-header__title {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+}
+
+.md-header__topic,
+.md-header__ellipsis {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.md-header__button.md-logo svg {
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* ======================================================
+   Links
+====================================================== */
+.md-typeset a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.md-typeset a:hover {
+  color: var(--brand-accent-strong);
+}
+
+/* ======================================================
+   Cards / posts
+====================================================== */
+.md-post {
+  margin: 0.6rem 0;
+  padding: 1.3rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--brand-border);
+  background: var(--brand-surface);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.md-post:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.1);
+}
+
+/* ======================================================
+   Code (simple, docs-style)
+====================================================== */
+.md-typeset pre {
+  margin: 0.6rem 0;
+  padding: 0.8rem 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  background: var(--brand-surface-muted);
+  border: 1px solid var(--brand-border);
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.md-typeset code {
+  font-size: 0.8em;
+  background: var(--brand-surface-muted);
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
+
+/* ======================================================
+   Images (inline, no block feel)
+====================================================== */
+.md-typeset img {
+  display: block;
+  max-width: 100%;
+  margin: 0.8rem auto;
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* ======================================================
+   Tables & quotes
+====================================================== */
+.md-typeset table,
+.md-typeset blockquote {
+  margin: 0.6rem 0;
+  background: var(--brand-surface);
+}
+
+/* ======================================================
+   Muted text
+====================================================== */
+.md-typeset figcaption,
+.md-typeset em {
+  color: var(--brand-ink-muted);
+  font-size: 0.85rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
