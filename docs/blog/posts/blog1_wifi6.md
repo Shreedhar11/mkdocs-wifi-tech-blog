@@ -1,9 +1,16 @@
 ---
-draft: true
+draft: false
 date:
   created: 2026-03-01
 categories:
   - WiFi6 (802.11ax)
+slug: wifi6-wifi6e-guide
+links:
+  - www.google.com
+summary: >
+  WiFi 6 is about efficiency, not just headline speed. This post explains the
+  core architectural shifts and why the 6 GHz expansion in WiFi 6E changes
+  capacity, channel reuse, and interference tradeoffs.
 ---
 
 # Why WiFi 6 Isn't About Speed (And Why WiFi 6E Changes Everything)
@@ -16,7 +23,7 @@ Let’s be brutally honest: for the last two decades, the WiFi industry has been
 
 When WiFi 5 (802.11ac) hit the scene, it promised screaming-fast theoretical data rates of up to 6.93 Gbps. But what good is a Ferrari that can travel at 300 km per hour if it is stuck in traffic gridlock? In the real world—especially in dense enterprise environments, auditoriums, and crowded offices—that peak speed plummeted the moment hundreds of mobile and IoT devices started fighting for airtime.
 
-<!--more-->
+<!-- more -->
 
 ### The Shift in Philosophy
 
@@ -172,4 +179,14 @@ The takeaway? WiFi 6E is a **capacity standard, not a coverage standard**. You c
 > *"WiFi 6 fixed the efficiency of the engine by turning a single-lane road into a multi-lane highway. WiFi 6E gave us a brand-new, massive highway system (the 6 GHz spectrum) where slow, legacy traffic is completely banned. Together, they eliminate the wireless traffic jam."*
 >
 
+{# 
+This is my private draft note. 
+It will be completely deleted during the `mkdocs build` process.
+Nobody will see it, not even in the page source code. 
 
+### Further Reading
+- [Google](https://www.google.com)
+- [IEEE 802.11ax Standard](https://ieeexplore.ieee.org/document/9442429)
+- 
+
+#}

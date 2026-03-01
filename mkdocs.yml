@@ -55,6 +55,7 @@ plugins:
       blog_toc: true
       post_date_format: long
       post_url_date_format: yyyy/MM
+  - macros
 
 markdown_extensions:
   - admonition
